@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="2"
+    >
+    <TableRow>
+        <TextView
+            android:id="@+id/titulo_ayuda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_help"
+            android:textSize="@dimen/size_title1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_span="2"
+            />
+
+    </TableRow>
+
+
+    <TableRow android:background="@color/backgroud_column">
+
+        <TextView
+            android:id="@+id/title2_reservation_help"
+            android:layout_width="match_parent"
+            android:layout_gravity="center|top"
+            android:layout_span="2"
+            android:gravity="center_vertical"
+            android:text="@string/title2_reservations_help"
+            android:textSize="@dimen/size_title3"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow>
+        <ImageView
+            android:layout_width="@dimen/size_image"
+            android:layout_height="@dimen/size_image"
+            android:src="@drawable/reservation"
+            android:layout_marginLeft="@dimen/margin_image"
+            android:id="@+id/imv_reservation_help"
+            android:layout_column="0"/>
+
+        <TextView
+            android:text="@string/text_reservation_help"
+            android:gravity="left"
+            android:textSize="6pt"
+            android:layout_gravity="center|top"
+            android:layout_column="1"
+            android:layout_marginLeft="4pt"
+            android:layout_marginTop="3pt"
+            android:id="@+id/text_reservation_help"/>
+
+
+    </TableRow>
+    <TableRow android:layout_marginTop="-7pt"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="2pt">
+        <Button
+            android:layout_width="35pt"
+            android:layout_height="15pt"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/text_button_reservation"
+            android:textStyle="italic"
+            android:background="@color/color_button"
+            android:textColor="@color/color_text_button"
+            android:id="@+id/btn_reservation"
+            android:onClick="nextActivity1"/>
+    </TableRow>
+
+    <TableRow android:background="@color/backgroud_column">
+
+        <TextView
+            android:text="@string/title_catalogue_help"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/size_title3"
+            android:layout_gravity="center|top"
+            android:id="@+id/title2_catalogue_help"
+            android:textStyle="bold"
+            android:layout_span="2"/>
+
+    </TableRow>
+
+    <TableRow>
+            <ImageView
+                android:id="@+id/imv_catalogues_help"
+                android:layout_width="@dimen/size_image"
+                android:layout_height="@dimen/size_image"
+                android:layout_column="0"
+                android:layout_margin="@dimen/margin_image"
+                android:paddingRight="1pt"
+                android:src="@drawable/spa" />
+        <TextView
+            android:text="@string/text_catalogue_help"
+            android:gravity="left"
+            android:textSize="6pt"
+            android:layout_gravity="center|top"
+            android:layout_column="1"
+            android:layout_marginTop="3pt"
+            android:id="@+id/text_catalogue_help"/>
+        </TableRow>
+    <TableRow android:layout_marginTop="-4pt"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="2pt">
+        <Button
+            android:layout_width="35pt"
+            android:layout_height="15pt"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/text_button_catologue"
+            android:textStyle="italic"
+            android:background="@color/color_button"
+            android:textColor="@color/backgroud_column"
+            android:id="@+id/btn_catalogue"
+            android:onClick="nextActivity"/>
+    </TableRow>
+    <TableRow android:background="#FDEBD0">
+
+        <TextView
+            android:text="@string/title2_cancel_help"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/size_title3"
+            android:layout_gravity="center|top"
+            android:id="@+id/title2_cancel_help"
+            android:textStyle="bold"
+            android:layout_span="3"/>
+    </TableRow>
+
+    <TableRow >
+        <ImageView
+            android:id="@+id/imv_cancel_help"
+            android:layout_width="@dimen/size_image"
+            android:layout_height="@dimen/size_image"
+            android:layout_column="0"
+            android:layout_marginLeft="5pt"
+            android:paddingRight="1pt"
+            android:src="@drawable/cancel" />
+
+        <TextView
+            android:text="@string/text_cancel_help"
+            android:gravity="left"
+            android:textSize="6pt"
+            android:layout_gravity="center|top"
+            android:layout_column="1"
+            android:layout_marginTop="3pt"
+            android:layout_marginLeft="1pt"
+            android:id="@+id/text_cancel_help"/>
+    </TableRow>
+
+
+
+</TableLayout>

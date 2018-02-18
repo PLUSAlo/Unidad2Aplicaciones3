@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF8000</color>
+    <color name="colorPrimaryDark">#FF8000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_button">#FAAC58</color>
+    <color name="color_text_button">#FFFFFF</color>
+    <color name="backgroud_column">#FDEBD0</color>
+    <color name="color_button_pdf">#FF0000</color>
+</resources>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/size_margin"
+        android:stretchColumns="5"
+        android:gravity="center"
+        android:layout_marginTop="2pt">
+
+        <TableRow   android:layout_marginTop="-40pt">
+            <TextView
+                android:id="@+id/title_clients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_management_clients"
+                android:textSize="@dimen/size_title1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_margin="5pt"
+                android:layout_span="6"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/values"
+            android:layout_marginBottom="@dimen/size_margin"
+            >
+
+            <TextView
+                android:id="@+id/id_title_client"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:textSize="6pt"
+                android:textStyle="bold"
+                android:padding="10dip"
+                android:background="@color/backgroud_column"
+                />
+
+            <TextView
+                android:id="@+id/name_title_client"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_text_name_client"
+                android:padding="9dip"
+                android:textSize="6pt"
+                android:textStyle="bold"
+                android:background="@color/backgroud_column"/>
+
+            <TextView
+                android:id="@+id/email_title_client"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_email_client"
+                android:padding="9dip"
+                android:textSize="6pt"
+                android:textStyle="bold"
+                android:background="@color/backgroud_column"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/total_reservations_title_client"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/backgroud_column"
+                android:gravity="center"
+                android:padding="9dip"
+                android:text="@string/title_client_total_reservations"
+                android:textSize="6pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/op_title_client"
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:layout_span="4"
+                android:background="@color/backgroud_column"
+                android:gravity="center"
+                android:padding="9dip"
+                android:text="@string/title_op_client"
+                android:textSize="6pt"
+                android:textStyle="bold" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-9pt">
+
+            <TextView
+                android:id="@+id/client_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/id_client_test" />
+            <TextView
+                android:id="@+id/name_client"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_client_test" />
+            <TextView
+                android:id="@+id/email_client"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_client_test" />
+            <TextView
+                android:id="@+id/reservations_client"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2" />
+            <TextView
+                android:id="@+id/edit_cliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/text_edit_client"
+                android:layout_marginLeft="25pt"/>
+                />
+
+            <ImageButton
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_marginTop="-2pt"
+                android:src="@drawable/edit"
+                android:contentDescription="@string/description_button_edit_client"
+                android:id="@+id/btn_edit_client"
+                android:onClick="nextActivity"/>
+
+            <TextView
+                android:id="@+id/delete_client"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/text_delete_client" />
+            />
+
+            <ImageButton
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_marginTop="-2pt"
+                android:src="@drawable/delete"
+                android:contentDescription="@string/escription_button_edit_client"
+                android:id="@+id/btn_delete_cliente"/>
+
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

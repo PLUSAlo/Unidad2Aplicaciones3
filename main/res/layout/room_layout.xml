@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/title_room"
+        android:textSize="@dimen/size_title1"
+        android:layout_marginTop="5pt"
+        android:textStyle="bold" />
+
+    <ImageSwitcher
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="80pt"
+        android:background="@drawable/room_suite"
+        android:id="@+id/imv_room_suite"
+        android:layout_below="@id/title_room"
+        android:layout_margin="10pt">
+    </ImageSwitcher>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_boton_previuos"
+        android:textSize="@dimen/size_title3"
+        android:textColor="@color/color_text_button"
+        android:background="@color/color_button"
+        android:textStyle="bold"
+        android:id="@+id/btn_previus"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/imv_room_suite"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10pt"
+        android:layout_marginTop="-5pt"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_boton_next"
+        android:textSize="@dimen/size_title3"
+        android:background="@color/color_button"
+        android:id="@+id/btn_next"
+        android:textColor="@color/color_text_button"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/imv_room_suite"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10pt"
+        android:layout_marginTop="-5pt"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_description_room"
+        android:textSize="@dimen/size_title3"
+        android:id="@+id/txv_description"
+        android:layout_below="@id/btn_previus"
+        android:layout_marginLeft="10pt"
+        android:layout_marginTop="5pt"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description_room_suite"
+        android:textSize="@dimen/size_text_small"
+        android:textStyle="italic"
+        android:id="@+id/txv_text_description"
+        android:layout_below="@id/txv_description"
+        android:layout_marginLeft="15pt"/>
+
+    <TextView
+        android:id="@+id/txv_prize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_prize"
+        android:layout_below="@id/txv_text_description"
+        android:textSize="@dimen/size_title3"
+        android:layout_marginLeft="10pt"/>
+    <TextView
+        android:id="@+id/txv_text_prize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prize_room_suite"
+        android:layout_marginLeft="50pt"
+        android:textSize="@dimen/size_text"
+        android:layout_below="@id/txv_text_description"
+        android:layout_marginTop="2pt"
+        android:textColor="@color/colorAccent"/>
+
+    <Button
+        android:layout_width="50pt"
+        android:layout_height="15pt"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Reservar"
+        android:textStyle="italic"
+        android:background="@color/color_button"
+        android:textColor="@color/backgroud_column"
+        android:layout_below="@id/txv_text_description"
+        android:layout_marginTop="2pt"
+        android:layout_marginLeft="115pt"
+        android:id="@+id/btn_reservar"
+        android:onClick="startActivityPDF10"
+
+
+        />
+    </RelativeLayout>
+

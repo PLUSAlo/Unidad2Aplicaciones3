@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.edu.utng.ugarcia.navigationdreawer.Pdf"
+    android:orientation="vertical"
+    android:paddingBottom="10pt"
+    android:paddingTop="30pt">
+
+    <TextView
+        android:id="@+id/title_pdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_thanks"
+        android:textSize="25pt"
+        android:gravity="center"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_button_pdf"
+        android:text="@string/text_download"
+        android:textSize="@dimen/size_text"
+        android:paddingTop="30pt"
+        android:gravity="center"/>
+
+
+    <Button
+        android:layout_width="@dimen/size_with_button"
+        android:layout_height="@dimen/size_height_button"
+        android:id="@+id/button_pdf"
+        android:textSize="@dimen/size_text"
+        android:background="@color/color_button_pdf"
+        android:textColor="@color/color_text_button"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:text="@string/pdf"
+        android:layout_marginTop="30pt"
+        android:onClick="startActivityPDF1"/>
+
+</LinearLayout>

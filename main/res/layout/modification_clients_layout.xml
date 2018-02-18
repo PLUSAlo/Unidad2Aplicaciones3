@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/title_edit_client"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/edit_client"
+    android:textSize="@dimen/size_title1"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:textStyle="bold"
+    android:layout_marginTop="@dimen/size_margin" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_title_edit_name"
+        android:text="@string/title_edit_name"
+        android:textSize="@dimen/size_text"
+        android:layout_margin="@dimen/size_margin"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_margin"
+        android:layout_marginRight="@dimen/size_margin"
+        android:layout_marginTop="@dimen/size_margin2"
+        android:layout_marginBottom="@dimen/size_margin2"
+        android:hint="@string/text_name"
+        android:textSize="@dimen/size_text_small"
+        android:id="@+id/edit_name_client"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_title_edit_email"
+        android:text="@string/text_title_edit_email"
+        android:textSize="@dimen/size_text"
+        android:layout_margin="@dimen/size_margin"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_margin"
+        android:layout_marginRight="@dimen/size_margin"
+        android:layout_marginTop="@dimen/size_margin2"
+        android:layout_marginBottom="@dimen/size_margin2"
+        android:hint="@string/text_email"
+        android:textSize="@dimen/size_text_small"
+        android:id="@+id/edit_email_client" />
+
+
+    <Button
+        android:layout_width="@dimen/size_with_button"
+        android:layout_height="@dimen/size_height_button"
+        android:background="@color/color_button"
+        android:textColor="@color/color_text_button"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_text"
+        android:text="@string/text_button_save"
+        android:layout_gravity="center"
+        android:layout_marginTop="30pt"
+        />
+</LinearLayout>

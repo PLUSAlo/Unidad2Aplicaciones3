@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.edu.utng.ugarcia.navigationdreawer.RoomReservation2"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="@string/txt_name_client"
+            android:text="@string/title_client"
+            android:textSize="@dimen/size_text" />
+
+
+    <EditText
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/edt_name"
+        android:textSize="@dimen/size_text_small"
+        />
+
+    <TextView
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="-400dp"
+        android:text="Entrada"
+        android:textSize="@dimen/size_text"
+        />
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"></CalendarView>
+
+    <TextView
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="-386dp"
+        android:text="@string/out_title_reservation"
+        android:textSize="@dimen/size_text"
+        />
+
+        <CalendarView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="460dp"></CalendarView>
+
+
+        <TextView
+            android:id="@+id/type_room"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-385dp"
+            android:layout_marginTop="780dp"
+            android:text="@string/title_type_room"
+            android:textSize="@dimen/size_text" />
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="840dp"
+            android:layout_marginLeft="-410dp"
+            android:text="@string/total_reservation_title"
+            android:textSize="@dimen/size_text"
+            />
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="@string/button_reservation"
+        android:layout_marginTop="890dp"
+        android:layout_marginLeft="340dp"
+        android:textSize="25dp"
+        android:id="@+id/btn_addition"
+        android:background="@color/color_button"
+        android:textColor="@color/color_text_button"
+        android:onClick="startActivityPDF"
+        />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
